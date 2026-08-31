@@ -1,4 +1,5 @@
-# Portfolio — Amos Clegbaza
+# Site portfolio 
+# Auteur: CLEGBAZA Amos Kévin Sènan
 
 Site personnel statique. **HTML / CSS / JS purs.**
 

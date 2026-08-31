@@ -1,0 +1,26 @@
+# Déploiement Netlify — site statique, aucun build.
+# Si le dépôt Netlify pointe sur la racine du repo, régler "Base directory" = portfolio
+# dans les réglages du site, ou publier ce dossier directement.
+
+[build]
+  publish = "."
+  command = ""
+
+# En-têtes de sécurité et de cache
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

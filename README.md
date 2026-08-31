@@ -1,6 +1,6 @@
 # Portfolio — Amos Clegbaza
 
-Site personnel statique. **HTML / CSS / JS purs, aucun framework, aucun build.**
+Site personnel statique. **HTML / CSS / JS purs.**
 
 ```
 portfolio/

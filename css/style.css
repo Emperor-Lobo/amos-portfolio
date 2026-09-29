@@ -1,5 +1,5 @@
 /* ============================================================
-   Amos Clegbaza — Portfolio
+   Amos Clegbaza - Portfolio
    Thème sombre, dégradés subtils bleu → violet.
    ============================================================ */
 
@@ -13,9 +13,9 @@
   --border-soft: #1c2536;
 
   /* Texte */
-  --text-strong: #f2f4f8;   /* blanc cassé — titres */
-  --text: #c3cad8;          /* gris clair — corps */
-  --text-dim: #8b93a7;      /* gris — secondaire */
+  --text-strong: #f2f4f8;   /* blanc cassé - titres */
+  --text: #c3cad8;          /* gris clair - corps */
+  --text-dim: #8b93a7;      /* gris - secondaire */
 
   /* Accents */
   --accent-blue: #3b82f6;

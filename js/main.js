@@ -1,5 +1,5 @@
 /* ============================================================
-   Portfolio — JS vanilla, aucune dépendance.
+   Portfolio - JS vanilla, aucune dépendance.
    - Menu mobile
    - Onglets compétences (accessibles, clavier)
    - Filtre projets par data-attribute

@@ -247,6 +247,40 @@
           </div>
         </article>
 
+        <article class="project-card" data-category="devops">
+          <div class="project-card-top">
+            <h3>Homelab Proxmox &amp; Supervision</h3>
+            <span class="project-badges"><span class="badge">DevOps</span></span>
+          </div>
+          <p class="project-desc">
+            Infrastructure personnelle sur serveur physique (Intel Core i3, 16&nbsp;Go RAM)&nbsp;:
+            hyperviseur Proxmox VE hébergeant plusieurs VMs Ubuntu Server, stack de
+            supervision Zabbix 7.0 complète (server, frontend, agent, base MySQL), services
+            conteneurisés via Docker (FreshRSS pour la veille technologique) et accès
+            distant sécurisé via Tailscale (MagicDNS), sans exposition de ports.
+          </p>
+          <details class="project-detail">
+            <summary>Détail du projet</summary>
+            <p>
+              Deux VMs aux rôles séparés&nbsp;: la première héberge ce portfolio derrière
+              nginx, la seconde (<code>zabserver</code>) fait tourner Zabbix et Docker.
+              Docker est installé depuis le dépôt APT officiel plutôt que via le paquet de
+              la distribution — clé GPG ajoutée au trousseau, architecture détectée
+              dynamiquement avec <code>dpkg --print-architecture</code>. FreshRSS est
+              déployé en conteneur avec une base SQLite plutôt que MySQL, pour rester léger
+              sur une VM aux ressources limitées.
+            </p>
+            <p>
+              Accès distant&nbsp;: un réseau Tailscale relie PC, téléphone et VMs, avec
+              MagicDNS activé pour joindre chaque service par son nom plutôt que par son IP,
+              sans aucune ouverture de port.
+            </p>
+          </details>
+          <ul class="project-stack">
+            <li>Proxmox VE</li><li>Zabbix</li><li>Docker</li><li>Tailscale</li><li>Linux</li>
+          </ul>
+        </article>
+
         <article class="project-card" data-category="dev">
           <div class="project-card-top">
             <h3>NEOMART</h3>
